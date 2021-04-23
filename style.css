@@ -1,0 +1,54 @@
+.tables { 
+  display: flex;
+  justify-content: center;
+}
+#table1:hover, #table2:hover, #table3:hover {
+  transform: scale(1.15);
+}
+
+#table1, #table2, #table3 {
+  margin: 40px;
+  text-align: center;
+  border: 1px solid #000000;
+  padding: 30px;
+}
+
+.product-name { 
+  background-color: #DDDDDD;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.purchase {
+  background-color: #f1c40f;
+  border: none;
+  padding: 15px 25px 15px 25px;
+  font-size: 15px;
+  border-radius: 10%;
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#item1 {
+  margin-left: 40px;
+  margin-right: 40px;
+  list-style-image: url("./truck64.png");
+}
+
+#item2 {
+  margin-left: 40px;
+  margin-right: 40px;
+  list-style-image: url("./shipping.png");
+
+}
+
+.topicos {
+  margin-top: -20px;
+}
