@@ -1,4 +1,31 @@
-.tables { 
+#nav-bar {
+   position: fixed; 
+    width: 100%; 
+    top: 0;
+}
+#nav-bar  ul{
+  display: flex;
+  /* background-color:#EDEDED; */
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#nav-bar li {
+  color: black;
+  margin: 5px 30px;
+}
+
+#logo {
+  align-self: flex-start;
+  /* background-color: red; */
+  margin: 100px;
+  display: flex;
+  /* justify-content: flex-start;
+  align-self: flex-start; */
+}
+
+#tables { 
   display: flex;
   justify-content: center;
 }
@@ -29,11 +56,24 @@
   font-size: 15px;
   border-radius: 10%;
 }
+#form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;
+  width: 50%;
+}
 
 #video {
   display: flex;
   justify-content: center;
   margin: auto;
+}
+#features {
+  display: flex;
+  justify-content: center;
 }
 
 #item1 {
@@ -46,7 +86,6 @@
   margin-left: 40px;
   margin-right: 40px;
   list-style-image: url("./shipping.png");
-
 }
 
 .topicos {
