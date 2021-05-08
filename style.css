@@ -1,47 +1,56 @@
-#nav-bar {
-   position: fixed; 
-    width: 100%; 
-    top: 0;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
 }
-#nav-bar  ul{
+#nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+#nav-bar ul {
   display: flex;
-  /* background-color:#EDEDED; */
   list-style: none;
   justify-content: flex-end;
   align-items: center;
 }
-
 #nav-bar li {
+  margin-right: 30px;
+}
+
+#nav-bar a {
+  text-decoration: none;
   color: black;
-  margin: 5px 30px;
+  margin: 5px 20px;
+  margin-right: 0px;
 }
 
 #logo {
   align-self: flex-start;
-  /* background-color: red; */
   margin: 100px;
   display: flex;
-  /* justify-content: flex-start;
-  align-self: flex-start; */
 }
 
-#tables { 
+#tables {
   display: flex;
   justify-content: center;
 }
-#table1:hover, #table2:hover, #table3:hover {
+#table1:hover,
+#table2:hover,
+#table3:hover {
   transform: scale(1.15);
 }
 
-#table1, #table2, #table3 {
+#table1,
+#table2,
+#table3 {
   margin: 40px;
   text-align: center;
   border: 1px solid #000000;
   padding: 30px;
 }
 
-.product-name { 
-  background-color: #DDDDDD;
+.product-name {
+  background-color: #dddddd;
 }
 
 .price {
@@ -76,16 +85,30 @@
   justify-content: center;
 }
 
-#item1 {
-  margin-left: 40px;
-  margin-right: 40px;
-  list-style-image: url("./truck64.png");
+#item1,
+#item2,
+#item3 {
+  margin: 40px;
+  list-style: none;
 }
-
-#item2 {
-  margin-left: 40px;
-  margin-right: 40px;
-  list-style-image: url("./shipping.png");
+input {
+  margin-bottom: 10px;
+}
+#email {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 500px;
+  height: 35px;
+}
+#submit {
+  font-weight: 600;
+  border-radius: 50px;
+  background-color: #f1c40f;
+  border: none;
+  padding: 10px 50px;
+  font-size: 15px;
+  border-radius: 10%;
 }
 
 .topicos {
@@ -95,5 +118,9 @@
 @media (max-width: 700px) {
   #tables {
     flex-direction: column;
+  }
+  #nav-bar {
+    display: flex;
+    justify-content: flex-end;
   }
 }
